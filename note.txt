@@ -1,0 +1,11 @@
+Changes for build project 
+
+./pages/about/index.js
+added key property in the index file
+line number 27 to 33 (icon add)
+
+
+in "next.config.js" file added below code
+images: {
+    unoptimized: true,
+  },

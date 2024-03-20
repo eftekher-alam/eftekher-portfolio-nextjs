@@ -35,7 +35,7 @@ const Home = () => {
           exit="hidden"
           className="max-w-sm md:max-w-lg lg:max-w-xl mx-auto lg:mx-0 mb-8 lg:mb-10"
         >
-          {`I'm a MERN Stack Developer / Front End Developer with 1 year of experience in full stack web development.`}
+          {`I am Eftekher Alam, I am a MERN Stack Developer with 1 year of experience in full stack web development. Crafting modern, scalable web applications to bring your vision to life with MERN magic ✨`}
         </motion.p>
         {/* button */}
         <div className="flex justify-center lg:hidden relative">
@@ -53,8 +53,25 @@ const Home = () => {
       </div>
     </div>
     {/* image */}
-    <div>image</div>
-  </div>;
+    <div className="w-[1000px] xl:w-[1200px] h-full absolute right-0 bottom-0">
+      {/* Background image */}
+      <div className="bg-none lg:bg-explosion lg:bg-cover lg:bg-right lg:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
+      </div>
+      {/* particles */}
+      <div>Particles</div>
+      {/* aviator image */}
+      <motion.div
+        className="w-full h-full max-w-[737px] max-h-[678px] absolute  lg:bottom-0 lg:-right-[3%] xl:right-[8%]"
+        variants={fadeIn("up", 0.5)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
+        <Avatar />
+      </motion.div>
+    </div>
+  </div >;
 };
 
 export default Home;
