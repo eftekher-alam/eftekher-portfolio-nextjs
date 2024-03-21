@@ -13,7 +13,7 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../variants"
 
 const Home = () => {
-  return <div className="bg-primary/60 h-full">
+  return <div className="bg-primary/60 h-full border border-yellow-100">
     {/* text */}
     <div className="w-full h-full bg-gradient-to-r from-primary/10 vai-black/30 to-black/10">
       <div className="text-center flex flex-col justify-center lg:pt-5 lg:text-left h-full container mx-auto">
