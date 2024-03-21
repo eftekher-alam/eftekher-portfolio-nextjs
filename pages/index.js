@@ -38,7 +38,7 @@ const Home = () => {
           {`I'm Eftekher Alam, I'm a MERN Stack Developer with 1 year of experience in full stack web development. Crafting modern, scalable web applications to bring your vision to life with MERN magic ✨`}
         </motion.p>
         {/* button */}
-        <div className="flex justify-center lg:hidden relative z-50">
+        <div className="flex justify-center lg:hidden relative z-10">
           <ProjectsBtn />
         </div>
         <motion.div
@@ -46,7 +46,7 @@ const Home = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="hidden lg:flex z-50"
+          className="hidden lg:flex z-10"
         >
           <ProjectsBtn />
         </motion.div>
