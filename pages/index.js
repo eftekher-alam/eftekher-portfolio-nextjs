@@ -38,7 +38,7 @@ const Home = () => {
           {`I'm Eftekher Alam, I'm a MERN Stack Developer with 1 year of experience in full stack web development. Crafting modern, scalable web applications to bring your vision to life with MERN magic ✨`}
         </motion.p>
         {/* button */}
-        <div className="flex justify-center lg:hidden relative">
+        <div className="flex justify-center lg:hidden relative z-50">
           <ProjectsBtn />
         </div>
         <motion.div
@@ -46,14 +46,14 @@ const Home = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="hidden lg:flex"
+          className="hidden lg:flex z-50"
         >
           <ProjectsBtn />
         </motion.div>
       </div>
     </div>
     {/* image */}
-    <div className="xl:w-[1200px] lg:w-[1000px] max-lg:w-full h-full absolute right-0 bottom-0">
+    <div className="w-full h-full absolute right-0 bottom-0">
       {/* Background image */}
       <div className="bg-none lg:bg-explosion lg:bg-cover lg:bg-right lg:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
       </div>
@@ -61,7 +61,7 @@ const Home = () => {
       <ParticlesContainer />
       {/* aviator image */}
       <motion.div
-        className="w-full h-full max-w-[737px] max-h-[678px] absolute  lg:bottom-0 lg:-right-[3%] xl:right-[8%]"
+        className="w-full h-full max-w-[737px] max-h-[678px] absolute  lg:bottom-0 lg:-right-[5%] xl:right-[7%]"
         variants={fadeIn("up", 0.5)}
         initial="hidden"
         animate="show"

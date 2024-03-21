@@ -9,3 +9,7 @@ in "next.config.js" file added below code
 images: {
     unoptimized: true,
   },
+
+
+
+  shape pack installed
