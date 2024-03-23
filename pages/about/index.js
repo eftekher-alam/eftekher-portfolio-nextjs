@@ -121,7 +121,7 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div className="h-full bg-primary/30 py-32 text-center lg:text-left">
+  return <div className="h-full bg-primary/30 pt-[80px] max-lg:pb-[70px] text-center lg:text-left">
     <Circles />
     {/* avatar img */}
     <motion.div
@@ -133,9 +133,9 @@ const About = () => {
     >
       <Avatar />
     </motion.div>
-    <div className="container mx-auto h-full flex flex-col items-center lg:flex-row gap-x-6 lg:pt-[1%] ">
+    <div className="md:container h-full mx-auto flex flex-col lg:flex-row overflow-y-auto lg:gap-x-4">
       {/* text */}
-      <div className="flex-1 flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 flex flex-col justify-start px-2">
         <motion.h2
           variants={fadeIn("right", 0.2)}
           initial="hidden"
@@ -151,7 +151,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0 max-md:hidden"
+          className="max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 max-md:hidden"
         >
           {`In 2016, I began learning programming. Since then, I've learned multiple programming languages, data structures, and algorithms. Furthermore, I've worked for a software company for almost 1 year.`}
         </motion.p>
@@ -161,7 +161,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="max-w-[500px] mx-auto lg:mx-0 mb-4 px-2 md:hidden"
+          className="max-w-[500px] mx-auto lg:mx-0 mb-4  md:hidden"
         >
           {`In 2016, I began learning programming. Since then, I've learned multiple languages, data structures, and algorithms.`}
         </motion.p>
@@ -204,10 +204,10 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="flex flex-col w-full lg:max-w-[48%] h-[480px]  lg:pt-[1%]"
+        className="w-full lg:w-1/2 flex flex-col"
       >
         {/* title */}
-        <div className="flex gap-x-4 lg:gap-x-8 mx-auto xl:mx-0 mb-4" >
+        <div className="flex gap-x-3 lg:gap-x-8 mx-auto lg:mx-0 mb-4" >
           {aboutData.map((item, itemIndex) => {
             return (
               <div
@@ -221,6 +221,7 @@ const About = () => {
             )
           })}
         </div>
+        {/* title wise info */}
         <div className="py-2 lg:py-6 flex flex-col gap-y-2 lg:gap-y-4 items-center lg:items-start">
           {aboutData[index].info.map((item, itemIndex) => {
             return (

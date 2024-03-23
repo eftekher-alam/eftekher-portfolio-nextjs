@@ -36,7 +36,7 @@ const Nav = () => {
   const router = useRouter();
   const pathname = router.pathname;
   return <nav
-    className='flex flex-col items-center lg:justify-center gap-y-4 fixed h-max bottom-0 mt-auto lg:right-[2%] z-50 top-0 w-full lg:w-16 lg:max-w-md  lg:h-screen'
+    className='flex flex-col items-center lg:justify-center gap-y-4 fixed h-max bottom-0 mt-auto lg:right-0 z-50 top-0 w-full lg:w-16 lg:max-w-md  lg:h-screen'
   >
     {/* inner */}
     <div
