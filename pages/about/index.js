@@ -121,7 +121,7 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div className="h-full bg-primary/30 pt-[80px] max-lg:pb-[70px] text-center lg:text-left">
+  return <div className="h-full bg-primary/30 pt-[80px] max-lg:pb-[80px] text-center lg:text-left">
     <Circles />
     {/* avatar img */}
     <motion.div
@@ -133,7 +133,7 @@ const About = () => {
     >
       <Avatar />
     </motion.div>
-    <div className="md:container h-full mx-auto flex flex-col lg:flex-row overflow-y-auto lg:gap-x-4">
+    <div className="md:container h-full mx-auto flex flex-col lg:flex-row max-lg:overflow-y-auto lg:gap-x-4 max-lg:pt-4">
       {/* text */}
       <div className="w-full lg:w-1/2 flex flex-col justify-start px-2">
         <motion.h2
@@ -141,7 +141,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="h2 max-md:text-2xl max-xl:text-4xl"
+          className="h2 max-md:text-2xl max-xl:text-4xl max-lg:max-w-[500px] max-lg:mx-auto"
         >
           Captivating <span className="text-accent">stories</span> birth magnificent designs.
         </motion.h2>

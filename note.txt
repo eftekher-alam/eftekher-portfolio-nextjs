@@ -1,15 +1,3 @@
-Changes for build project 
-
-./pages/about/index.js
-added key property in the index file
-line number 27 to 33 (icon add)
-
-
-in "next.config.js" file added below code
-images: {
-    unoptimized: true,
-  },
-
-
-
-  shape pack installed
+Tutorial Link : https://www.youtube.com/watch?v=qp0-L_M3Ad4&list=WL&index=12&t=7517s
+Tutorial Name : Build a Portfolio Website With Next JS, Tailwind CSS & Framer Motion
+YouTube Channel: Cristian Mihai
