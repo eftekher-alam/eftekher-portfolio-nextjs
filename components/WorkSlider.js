@@ -107,12 +107,12 @@ const WorkSlider = () => {
                           {/* title */}
                           <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-4 group-hover:lg:-translate-y-14 transition-all duration-300 gap-4">
                             {/* Project Name */}
-                            <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em] py-2">
+                            <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em] md:py-2">
                               {/* title part 1 */}
-                              <div className="delay-100 text-center font-semibold text-xl w-full" >{image.title}</div>
+                              <div className="delay-100 text-center font-semibold md:text-xl w-full" >{image.title}</div>
                             </div>
-                            <Link href={"/"} target="_blank">
-                              <div className="flex justify-center items-center gap-x-2 text-[13px] tracking-[0.2em] mb-2">
+                            <Link href={image.live} target="_blank">
+                              <div className="flex justify-center items-center gap-x-2 text-[13px] tracking-[0.2em] md:mb-2 max-md:text-xs">
                                 {/* title part 1 */}
                                 <div className="delay-100" >Live</div>
                                 {/* title part 2 */}
@@ -121,8 +121,8 @@ const WorkSlider = () => {
                                 <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200" ><BsArrowRight /></div>
                               </div>
                             </Link>
-                            <Link href={"/"} target="_blank">
-                              <div className="flex justify-center items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                            <Link href={image.code} target="_blank">
+                              <div className="flex justify-center items-center gap-x-2 text-[13px] tracking-[0.2em] max-md:text-xs">
                                 {/* title part 1 */}
                                 <div className="delay-100" >Source</div>
                                 {/* title part 2 */}
